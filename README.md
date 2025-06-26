@@ -59,7 +59,6 @@ Each sample is treated **independently** (non-sequential), suitable for per-pack
 
 - **Optimizer**: Adam (`lr=1e-4`)
 - **Loss**: CrossEntropyLoss
-- **Mixed-Precision**: Enabled via `autocast` + `GradScaler`
 - **Epochs**: 10
 - **Batch size**: 512
 
@@ -87,15 +86,6 @@ Test F1 Score: 0.99
 - Add positional encoding for time-based sequencing
 - Visualize attention heads on tabular features
 - Evaluate with imbalanced data settings
-
----
-
-## 🤝 Contributions
-
-PRs and suggestions are welcome! Feel free to fork and try new approaches like:
-- Gated Transformers
-- TabNet or FT-Transformer
-- Temporal attention over session-based sequences
 
 ---
 

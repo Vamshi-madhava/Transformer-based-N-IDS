@@ -4,13 +4,13 @@
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 This project implements a **Transformer architecture** for binary classification of network traffic as either **benign** or **attack**. We leverage the [CICIDS 2017 dataset](https://www.unb.ca/cic/datasets/ids-2017.html), a modern benchmark for evaluating NIDS models.
 
 ---
 
-## 📊 Results
+## Results
 
 | Metric         | Value   |
 |----------------|---------|
@@ -22,7 +22,7 @@ The model converges rapidly and generalizes well to unseen test data.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Python 3.11
 - PyTorch
@@ -33,7 +33,7 @@ The model converges rapidly and generalizes well to unseen test data.
 
 ---
 
-## 🧱 Model Architecture
+## Model Architecture
 
 - **Input**: 77 tabular features
 - **Feature Embedding**: `Linear(1 → d_model)`
@@ -45,7 +45,7 @@ The model converges rapidly and generalizes well to unseen test data.
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 We used a preprocessed `.npz` version of the CICIDS dataset containing:
 - `X_train`, `y_train`
@@ -55,7 +55,7 @@ Each sample is treated **independently** (non-sequential), suitable for per-pack
 
 ---
 
-## 🚀 Training
+## Training
 
 - **Optimizer**: Adam (`lr=1e-4`)
 - **Loss**: CrossEntropyLoss
@@ -64,7 +64,7 @@ Each sample is treated **independently** (non-sequential), suitable for per-pack
 
 ---
 
-## 📈 Visualizations
+## Visualizations
 
 We provide:
 - Accuracy/Loss curves over epochs
@@ -72,7 +72,7 @@ We provide:
 
 ---
 
-## 🧪 Evaluation Example
+## Evaluation Example
 
 ```bash
 Test Accuracy: 99.12%
@@ -80,7 +80,7 @@ Test F1 Score: 0.99
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 - Extend to multi-class classification (different attack types)
 - Add positional encoding for time-based sequencing

@@ -1,4 +1,4 @@
-# 🚨 Transformer-Based Network Intrusion Detection System (NIDS)
+# Transformer-Based Network Intrusion Detection System (NIDS)
 
 > A Transformer model for detecting malicious network activity using the CICIDS 2017 dataset. Built from scratch in PyTorch and trained using mixed-precision on Google Colab.
 
